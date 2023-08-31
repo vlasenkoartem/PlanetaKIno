@@ -1,0 +1,481 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  overflow-x: hidden;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 100vw;
+  background: #1e1e1e;
+}
+
+:root{
+  --index: calc(1vw + 1vh);
+}
+
+
+.imax-h1 {
+  color: rgb(51, 135, 183);
+  text-align: center;
+  margin-top: 1em;
+  font-size: calc(var(--index)*5);
+  text-shadow: 0.7em -0.5em rgb(34, 34, 34);
+}
+.p-imax-block {
+color: rgb(53, 124, 164);
+  text-align: center;
+  margin-top: 6em;
+  
+ 
+}
+.p-imax {
+ 
+  font-size: calc(var(--index)*2);
+}
+
+.p-imax-info{
+color: #fff;
+  text-align: center;
+  margin-top: 3em;
+  font-size: calc(var(--index)*1.5);
+  width: 80%;
+  transform: translateX(13%);
+}
+
+.logo-locate-index{
+  width:  calc(var(--index)*3);
+  height: calc(var(--index)*3);
+  background-image: url(images/planetakinoicon.svg);
+  background-size: calc(var(--index)*3) calc(var(--index)*3);
+  background-position: center;
+  position: absolute;
+  top: 4em;
+  left: 1.5em;
+}
+
+
+
+.layers {
+perspective: 1000px;
+overflow: hidden;
+margin-top: 8em;
+
+}
+
+.layers__container {
+height: 100vh;
+min-height: 500px;
+transform-style: preserve-3d;
+transform: rotateX(var(--move-x-for-phones)) rotateY(var(--move-y-for-phones));
+will-change: transform;
+transition: transform var(--transition);
+
+}
+
+.layers__item {
+position: absolute;
+inset: -5vw;
+background-size: cover;
+background-position: center;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.layer-1 {
+transform: translateZ(-55px) scale(1.06);
+}
+.layer-2 {
+transform: translateZ(80px) scale(0.88);
+}
+.layer-3 {
+transform: translateZ(180px) scale(0.8);
+}
+.layer-4 {
+transform: translateZ(190px) scale(0.9);
+}
+.layer-5 {
+transform: translateZ(300px) scale(0.9);
+}
+.layer-6 {
+transform: translateZ(380px);
+}
+
+.p-content-layers {
+width: 70%;
+font-weight: 900;
+color: rgb(1, 200, 100);
+font-size: calc(var(--index)*3);
+position: absolute;
+top: 80%;
+left: 50%;
+transform: translateX(-35%);
+}
+
+
+@media (min-width: 768px){
+
+
+  *{
+      margin: 0;
+      padding: 0;
+  }
+  
+  body{
+      overflow-x: hidden;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      width: 100vw;
+      background: #1e1e1e;
+    }
+  
+  :root{
+      --index: calc(1vw + 1vh);
+  }
+  
+  
+    .imax-h1 {
+      color: rgb(51, 135, 183);
+      text-align: center;
+      margin-top: 1em;
+      font-size: calc(var(--index)*5);
+      text-shadow: 0.7em -0.5em rgb(34, 34, 34);
+  }
+  .p-imax-block {
+    color: rgb(53, 124, 164);
+      text-align: center;
+      margin-top: 6em;
+      
+     
+  }
+  .p-imax {
+     
+      font-size: calc(var(--index)*2);
+  }
+  
+  .p-imax-info{
+    color: #fff;
+      text-align: center;
+      margin-top: 3em;
+      font-size: calc(var(--index)*1.5);
+      width: 80%;
+      transform: translateX(13%);
+  }
+  
+  .logo-locate-index{
+      width:  calc(var(--index)*3);
+      height: calc(var(--index)*3);
+      background-image: url(images/planetakinoicon.svg);
+      background-size: calc(var(--index)*3) calc(var(--index)*3);
+      background-position: center;
+      position: absolute;
+      top: 4em;
+      left: 3em;
+  }
+  
+  
+  
+  .layers {
+    perspective: 1000px;
+    overflow: hidden;
+    margin-top: 16em;
+    
+  }
+  
+  .layers__container {
+    height: 100vh;
+    min-height: 500px;
+    transform-style: preserve-3d;
+    transform: rotateX(var(--move-y)) rotateY(var(--move-x));
+    will-change: transform;
+    transition: transform var(--transition);
+    
+  }
+  
+  .layers__item {
+    position: absolute;
+    inset: -5vw;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .layer-1 {
+    transform: translateZ(-55px) scale(1.06);
+  }
+  .layer-2 {
+    transform: translateZ(80px) scale(0.88);
+  }
+  .layer-3 {
+    transform: translateZ(180px) scale(0.8);
+  }
+  .layer-4 {
+    transform: translateZ(190px) scale(0.9);
+  }
+  .layer-5 {
+    transform: translateZ(300px) scale(0.9);
+  }
+  .layer-6 {
+    transform: translateZ(380px);
+  }
+  
+  .p-content-layers {
+    width: 70%;
+    font-weight: 900;
+    color: rgb(1, 200, 100);
+    font-size: calc(var(--index)*5);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-35%);
+  }
+  
+  
+  }
+
+
+
+@media (min-width: 1024px){
+
+
+  *{
+      margin: 0;
+      padding: 0;
+  }
+  
+  body{
+      overflow-x: hidden;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      width: 100vw;
+      background: #1e1e1e;
+    }
+  
+  :root{
+      --index: calc(1vw + 1vh);
+  }
+  
+  
+    .imax-h1 {
+      color: rgb(51, 135, 183);
+      text-align: center;
+      margin-top: 1em;
+      font-size: calc(var(--index)*5);
+      text-shadow: 0.7em -0.5em rgb(34, 34, 34);
+  }
+  .p-imax-block {
+    color: rgb(53, 124, 164);
+      text-align: center;
+      margin-top: 6em;
+      
+     
+  }
+  .p-imax {
+     
+      font-size: calc(var(--index)*2);
+  }
+  
+  .p-imax-info{
+    color: #fff;
+      text-align: center;
+      margin-top: 3em;
+      font-size: calc(var(--index)*1.5);
+      width: 80%;
+      transform: translateX(13%);
+  }
+  
+  .logo-locate-index{
+      width:  calc(var(--index)*3);
+      height: calc(var(--index)*3);
+      background-image: url(images/planetakinoicon.svg);
+      background-size: calc(var(--index)*3) calc(var(--index)*3);
+      background-position: center;
+      position: absolute;
+      top: 4em;
+      left: 3em;
+  }
+  
+  
+  
+  .layers {
+    perspective: 1000px;
+    overflow: hidden;
+    margin-top: 18em;
+    
+  }
+  
+  .layers__container {
+    height: 100vh;
+    min-height: 500px;
+    transform-style: preserve-3d;
+    transform: rotateX(var(--move-y)) rotateY(var(--move-x));
+    will-change: transform;
+    transition: transform var(--transition);
+    
+  }
+  
+  .layers__item {
+    position: absolute;
+    inset: -5vw;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .layer-1 {
+    transform: translateZ(-55px) scale(1.06);
+  }
+  .layer-2 {
+    transform: translateZ(80px) scale(0.88);
+  }
+  .layer-3 {
+    transform: translateZ(180px) scale(0.8);
+  }
+  .layer-4 {
+    transform: translateZ(190px) scale(0.9);
+  }
+  .layer-5 {
+    transform: translateZ(300px) scale(0.9);
+  }
+  .layer-6 {
+    transform: translateZ(380px);
+  }
+  
+  .p-content-layers {
+    width: 70%;
+    font-weight: 900;
+    color: rgb(1, 200, 100);
+    font-size: calc(var(--index)*5);
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-35%);
+  }
+  
+  
+  }
+
+@media (min-width: 1440px){
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100vw;
+    background: #1e1e1e;
+  }
+
+:root{
+    --index: calc(1vw + 1vh);
+}
+
+
+  .imax-h1 {
+    color: rgb(51, 135, 183);
+    text-align: center;
+    margin-top: 1em;
+    font-size: calc(var(--index)*5);
+    text-shadow: 0.7em -0.5em rgb(34, 34, 34);
+}
+.p-imax-block {
+  color: rgb(53, 124, 164);
+    text-align: center;
+    margin-top: 6em;
+    
+   
+}
+.p-imax {
+   
+    font-size: calc(var(--index)*2);
+}
+
+.p-imax-info{
+  color: #fff;
+    text-align: center;
+    margin-top: 3em;
+    font-size: calc(var(--index)*1.5);
+    width: 80%;
+    transform: translateX(13%);
+}
+
+.logo-locate-index{
+    width:  calc(var(--index)*3);
+    height: calc(var(--index)*3);
+    background-image: url(images/planetakinoicon.svg);
+    background-size: calc(var(--index)*3) calc(var(--index)*3);
+    background-position: center;
+    position: absolute;
+    top: 4em;
+    left: 3em;
+}
+
+
+
+.layers {
+  perspective: 1000px;
+  overflow: hidden;
+  margin-top: 22em;
+  
+}
+
+.layers__container {
+  height: 100vh;
+  min-height: 500px;
+  transform-style: preserve-3d;
+  transform: rotateX(var(--move-y)) rotateY(var(--move-x));
+  will-change: transform;
+  transition: transform var(--transition);
+  
+}
+
+.layers__item {
+  position: absolute;
+  inset: -5vw;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.layer-1 {
+  transform: translateZ(-55px) scale(1.06);
+}
+.layer-2 {
+  transform: translateZ(80px) scale(0.88);
+}
+.layer-3 {
+  transform: translateZ(180px) scale(0.8);
+}
+.layer-4 {
+  transform: translateZ(190px) scale(0.9);
+}
+.layer-5 {
+  transform: translateZ(300px) scale(0.9);
+}
+.layer-6 {
+  transform: translateZ(380px);
+}
+
+.p-content-layers {
+  width: 70%;
+  font-weight: 900;
+  color: rgb(1, 200, 100);
+  font-size: calc(var(--index)*5);
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-30%);
+}
+
+
+}
